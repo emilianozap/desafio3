@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color:aliceblue;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 0;
+   
+}
+.contenedor img{
+    height: 100%;
+    padding: 5px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+   
+}  
+.navbar ul li .link{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 1cm;
+}
+.navbar ul li .link:hover{
+    color: brown;
+}
+.contenedor-hero{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    gap: 10px;
+}
+.contenedor-hero .box1{
+    width: 45%;
+    height: 90%;
+    margin: 1cm;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contenedor-hero .box1 h1{
+    font-size: 80px;
+    }
+    .contenedor-hero .box1 h3{
+        font-size: 60px;
+    }
+    .contenedor-hero .box1 p{
+        font-weight: bold;
+        padding: 5%;
+    }
+    .contenedor-hero .box1 span{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+    }
+    .contenedor-hero .box1 h2{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 50px;
+    }
+    .contenedor-hero .box1 img{
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -15%;
+    }
+    .contenedor-hero .box1 img a:hover{
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .contenedor-hero .box2{
+    background-image: url(./img/imageslink.jfif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: solid 6px;
+    border-color: rgba(0, 102, 255, 0.644);
+    border-radius: 10%;
+    width: 45%;
+    height: 90%;
+    margin: 1cm;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    }
+    .contenedor-hero .box2 button{
+     display: flex;   
+     flex-flow: column;
+     width: 100px;
+     height: 100px;
+     align-items: center;
+     justify-content: center;
+     color: aliceblue;
+     margin: 10%;
+     background-color: rgba(0, 102, 255, 0.644);
+     border: none;
+     border-radius: 100%;
+     font-weight: bold;
+    }
+    .contenedor-hero .box2 button:hover{
+        cursor: pointer;
+        background-color: brown;
+    }
+.nosotros{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    border: solid 6PX;
+    border-color: rgba(0, 102, 255, 0.644);
+}
+.nosotros .redes-sociales img{
+    width: 1cm;
+    height: 1cm;
+    margin-top: 60%;
+    margin: 1cm;
+    cursor: pointer;
+}
+.nosotros .redes-sociales a img :hover{
+    transition: 2.5s;
+}
