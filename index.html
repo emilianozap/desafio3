@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio3</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-        <header class="contenedor">    
-            <img src="img/logo1.png" alt="LOGO">
-                <nav class="navbar">
-                <ul>
-                    <li><a class="link" href="#">Inicio</a></li>
-                    <li><a class="link" href="#">Productos</a></li>
-                    <li><a class="link" href="#">Servicios</a></li>
-                    <li><a class="link" href="#">Contactos</a></li>
-                </ul>
-            </nav>
-        </header>
+
+    <header class="contenedor">
+        <img src="img/logo1.png" alt="LOGO">
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list">
+                <li><a class="link" href="#">Inicio</a></li>
+                <li><a class="link" href="#">Productos</a></li>
+                <li><a class="link" href="#">Servicios</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section class="contenedor-hero">
             <div class="box1">
                 <h1>MAESTOR</h1>
-                    <H3>GUITARRA</H3>
-                    <P>Aprende a tocar la guitarra desde casa con una metodología única
-                        Por fin, entenderás la música</P>
-                    <span>100 Clases</span>
-                    <h2 class="oferta">oferta $1500</h2>
-                    <a href="#"><img class="item" src="img/suscribirme.png" alt="suscribirme"></a>
-                </div>
+                <H3>GUITARRA</H3>
+                <P>Aprende a tocar la guitarra desde casa con una metodología única
+                    Por fin, entenderás la música</P>
+                <span>100 Clases</span>
+                <h2 class="oferta">oferta $1500</h2>
+                <a href="#"><img class="item" src="img/suscribirme.png" alt="suscribirme"></a>
+            </div>
             <div class="box2">
-                <button type="submit">prueba gratis</button>
-                <button type="submit">tecnicas</button>
+                <a href="#" class="primerbtn">prueba gratis</a>
+                <a href="#" class="primerbtn">tecnicas</a>
             </div>
         </section>
-        <article class="nosotros">
-            <h2>NUESTRA ESCUELA</h2>
-                <p>Auténticos maestros de la guitarra
+        <section class="nosotros">
+            <h2>🎸NUESTRA ESCUELA🎸</h2>
+            <p>Auténticos maestros de la guitarra,
 
-                    Contamos con profesores excelentes con amplia experiencia en escenarios, todos ellos guitarristas reconocidos y grandes pedagogos.
-                    
-                    David Muñoz “Gnaposs” es nuestro profesor titular. Además de su extenso bagaje con más de 30 años de experiencia, su currículum incluye el haber sido el guitarrista principal de Jarabe de Palo durante 5 años.
-                    
-                    Por otra parte, tenemos a Miguel Gil y Juan Martín como profesores colaboradores. A pesar de su juventud, Miguel Gil ha compartido escenario con artistas de la talla de Antonio Orozco, Pablo Lopez, y Carlos Baute. Por su parte, Juan Martín es líder de la banda española de metal progresivo “Rising Core” y un referente como guitarrista en ese estilo.
-                    
-                    Tenemos el compromiso de ir ampliando el elenco de profesores para que siempre puedas estar a la última y aprender de los mejores.</p>
-                    <div class="redes-sociales">
-                        <a href="#"><img src="./img/facebook_logo_rgb-blue.png" alt="facebook"></a>
-                        <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
-                        <a href="#"><img src="./img/Twitter-icon-3-220x220.webp" alt="twitter"></a>
-                        <a href="#"><img src="./img/Whatsapp_icon-icons.com_66931.png" alt="Whatsapp_icon-icons"></a>
-                    </div>
-            
-        </article>
+                Contamos con profesores excelentes con amplia experiencia en escenarios, todos ellos guitarristas
+                reconocidos y grandes pedagogos.
+
+                David Muñoz “Gnaposs” es nuestro profesor titular. Además de su extenso bagaje con más de 30 años de
+                experiencia, su currículum incluye el haber sido el guitarrista principal de Jarabe de Palo durante 5
+                años.
+
+                Por otra parte, tenemos a Miguel Gil y Juan Martín como profesores colaboradores. A pesar de su
+                juventud, Miguel Gil ha compartido escenario con artistas de la talla de Antonio Orozco, Pablo Lopez, y
+                Carlos Baute. Por su parte, Juan Martín es líder de la banda española de metal progresivo “Rising Core”
+                y un referente como guitarrista en ese estilo.
+
+                Tenemos el compromiso de ir ampliando el elenco de profesores para que siempre puedas estar a la última
+                y aprender de los mejores.</p>
+        </section>
+        <section id="cards">
+            <h2 class="titulo">TE OFRECEMOS LAS MEJORES HERRAMIENTAS <span>PARA UN APRENDIZAJE RAPIDO Y
+                    PERMANENTE</span></h2>
+            <div class="container-info">
+
+                <div class="info ">
+                    <h2>💿Una suscripción, contenido ilimitado</h2>
+                    <p>Muévete libremente entre los más de 200 vídeos de cursos, ejercicios, repertorio, y muchos
+                        otros contenidos.
+                    </p>
+                </div>
+                <div class="info ">
+                    <h2>🤔Resuelve Tus Dudas</h2>
+                    <p>Encuentra las respuestas a tus preguntas participando en las lecciones, asistiendo a nuestras
+                        sesiones live o interactuando en la mayor comunidad de guitarristas en habla hispana.
+                    </p>
+                </div>
+
+
+                <div class="info ">
+                    <h2>😎Aprende Con Los Mejores</h2>
+                    <p>Aprende con nuestro equipo de profesores, capitaneados por un guitarrista e instructor
+                        reconocido mundialmente: David Gnaposs, por menos de lo que cuesta una clase particular.</p>
+                </div>
+                <div class="info ">
+                    <h2>🎓Alcanza Tus Objetivos</h2>
+                    <p>Te garantizamos que mejorarás tu nivel y te ayudaremos a formarte sea cual sea tu perfil:
+                        principiante, autodidacta o avanzado.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <img src="./img/logo1.png" alt="LOGO" class="logo">
+            <h2>CONTACTOS</h2>
+            <p>Buenoas Aires, Argentina</p>
+            <p>📍 rivadavia-20500</p>
+            <p>📭Maestroguitarra@gmail.com</p>
+            <div>
+                <ul>
+                    <li><a href="#"><img src="./img/facebook_logo_rgb-blue.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/Whatsapp_icon-icons.com_66931.png" alt="xx"></a></li>
+                </ul>
+            </div>
+            <span>Copyright © 2022 maestro guitarra. Todos los derechos reservados.</span>
+        </section>
+    </footer>
 
 </body>
+
 </html>

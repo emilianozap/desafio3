@@ -5,25 +5,40 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*header*/
 .contenedor{
     display: flex;
     justify-content: space-between;
-    background-color:aliceblue;
+    background-color:rgb(202, 201, 201);
     align-items: center;
     height: 60px;
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
+    z-index: 1;
    
 }
 .contenedor img{
     height: 100%;
     padding: 5px;
 }
+.navbar{
+    display: flex;
+    
+}
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+#toggle-menu{
+    display: none;
+}
 .navbar ul{
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 5px;
+    
    
 }  
 .navbar ul li .link{
@@ -31,26 +46,35 @@
     font-size: 12px;
     font-weight: bold;
     margin: 1cm;
+
 }
 .navbar ul li .link:hover{
-    color: brown;
+    color: rgba(0, 102, 255, 0.644);
+   
+}/*main (inicio)*/
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: black;
+width: 100%;
+
 }
 .contenedor-hero{
-    background-color: grey;
+    color: rgb(202, 201, 201);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    gap: 10px;
+    width: 90%;
+    padding: 30px 0px;
 }
 .contenedor-hero .box1{
-    width: 45%;
-    height: 90%;
     margin: 1cm;
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 50%;
+    height: 460px;
 }
 .contenedor-hero .box1 h1{
     font-size: 80px;
@@ -73,7 +97,7 @@
         font-size: 50px;
     }
     .contenedor-hero .box1 img{
-        width: 250px;
+        width: 200px;
         height: 200px;
         display: flex;
         justify-content: flex-start;
@@ -81,62 +105,120 @@
     }
     .contenedor-hero .box1 img a:hover{
         cursor: pointer;
-        transition: 0.5s;
+        
     }
     .contenedor-hero .box2{
     background-image: url(./img/imageslink.jfif);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border: solid 6px;
-    border-color: rgba(0, 102, 255, 0.644);
-    border-radius: 10%;
-    width: 45%;
-    height: 90%;
+    width: 50%;
+    height: 460px;
     margin: 1cm;
     display: flex;
     flex-flow: column;
     justify-content: center;
     }
-    .contenedor-hero .box2 button{
+    .contenedor-hero .box2 .primerbtn{
      display: flex;   
      flex-flow: column;
      width: 100px;
-     height: 100px;
+     height: 70px;
      align-items: center;
      justify-content: center;
-     color: aliceblue;
+     color: rgb(202, 201, 201);
      margin: 10%;
      background-color: rgba(0, 102, 255, 0.644);
      border: none;
-     border-radius: 100%;
+     border-radius: 10%;
      font-weight: bold;
+     text-align: center;
     }
     .contenedor-hero .box2 button:hover{
         cursor: pointer;
         background-color: brown;
     }
+    /*ABOUT*/
 .nosotros{
     display: flex;
     justify-content: center;
-    background-color: black;
-    color: aliceblue;
+    color: rgb(202, 201, 201);
     align-items: center;
     text-align: center;
     flex-flow: column;
-    height: 300px;
-    width: 100%;
+    width: 80%;
+    max-width: 950px;
     position: relative;
-    top: 0;
-    border: solid 6PX;
-    border-color: rgba(0, 102, 255, 0.644);
+    padding: 30px;
 }
-.nosotros .redes-sociales img{
-    width: 1cm;
-    height: 1cm;
-    margin-top: 60%;
-    margin: 1cm;
-    cursor: pointer;
+.nosotros p{
+    padding: 2%;
+
 }
-.nosotros .redes-sociales a img :hover{
-    transition: 2.5s;
+/*seccion cards*/
+#cards{
+    color: rgb(202, 201, 201);
+    text-align: center;
+    max-width: 80%;
+    background-image: url(./img/fuego.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 600px;
+    padding: 80px 0;
+    margin: 10px;
 }
+#cards .container-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    text-align: center;
+    gap: 10px;
+   
+}
+
+#cards .container-info .info{
+    gap: 10px;
+    margin: 80px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    width: 100%;
+    
+    
+}
+/*footer*/
+footer{
+    background-color:rgb(202, 201, 201) ;
+    width: 100%;
+    height: 230px;
+}
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+}
+.footer img{
+    height: 30px;
+    width: 30px;
+   
+
+}
+.footer .logo{
+    width: 60px;
+    height: 56px;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 20px;
+    list-style: none;
+}
+.footer span{
+    text-align: center;
+    font-size: 10px;
+}
+
+
